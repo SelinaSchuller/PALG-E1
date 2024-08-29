@@ -1,0 +1,24 @@
+﻿@page "/introduction"
+
+<body>
+    <p>@showText</p>
+</body>
+
+@code {
+    List<string> texts = new List<string> { "Hello", "World", "This is", "Blazor" };
+    string showText;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Simulate some initialization if needed
+        showText = texts.FirstOrDefault();
+    }
+
+    private void Next()
+    {
+        foreach(var text in texts)
+        {
+            showText = text;
+        }
+    }
+}

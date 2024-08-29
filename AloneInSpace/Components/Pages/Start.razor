@@ -1,0 +1,23 @@
+﻿@page "/"
+@using AloneInSpace.Services
+@inject INavigateToPage _navigateToPage
+
+<body>
+	<div class="main">
+		<div class="text">
+			<h1>ALONE IN SPACE</h1>
+			<p>Made by Selina Schuller</p>
+		</div>
+		<button class="startButton" @onclick='() => _navigateToPage.OnNavigatedTo("introduction")'>Play</button>
+
+	</div>
+</body>
+
+@code {
+	protected override async Task OnInitializedAsync()
+	{
+		int i = 0;
+		i++;
+
+	}
+}

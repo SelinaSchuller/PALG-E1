@@ -1,0 +1,10 @@
+﻿body{
+	background-color: lightblue;
+	color: white;
+
+}
+
+p {
+	border: solid 1px transparent;
+	font-size: 200px;
+}
