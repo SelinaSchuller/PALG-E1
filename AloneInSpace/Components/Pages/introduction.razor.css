@@ -4,7 +4,21 @@
 
 }
 
-p {
-	border: solid 1px transparent;
-	font-size: 200px;
+div {
+	width: 300px;
+	height: 120px;
+	border: solid transparent 1px;
+	background-color: black;
+	font-size: 60px;
+	font-family: "Handjet";
+	padding: 10px;
+}
+
+/*fonts:*/
+.handjet-<uniquifier > {
+	font-family: "Handjet", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	font-variation-settings: "ELGR" 1, "ELSH" 2;
 }

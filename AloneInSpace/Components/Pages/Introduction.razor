@@ -1,24 +1,59 @@
 ﻿@page "/introduction"
 
-<body>
-    <p>@showText</p>
-</body>
+<div @ref="focusDiv" tabindex="0" @onkeydown="HandleKeyPress">
+    @if(!string.IsNullOrEmpty(currentText))
+    {
+        <TypingEffect Text="@currentText" Delay="150" />
+        <br />
+    }
+</div>
+
+
+
 
 @code {
-    List<string> texts = new List<string> { "Hello", "World", "This is", "Blazor" };
-    string showText;
+    private List<string> texts = new List<string> { "Hello", "World", "This is", "Blazor" };
+    private int currentIndex = 0;
+    private string currentText;
+
+    private ElementReference focusDiv;
 
     protected override async Task OnInitializedAsync()
     {
-        // Simulate some initialization if needed
-        showText = texts.FirstOrDefault();
+        // Set the initial text
+        currentText = texts[currentIndex];
     }
 
-    private void Next()
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        foreach(var text in texts)
+        if(firstRender)
         {
-            showText = text;
+            await focusDiv.FocusAsync(); 
         }
     }
+
+    private void HandleKeyPress(KeyboardEventArgs e)
+    {
+        System.Diagnostics.Debug.WriteLine($"Key pressed: {e.Key}");
+        if(e.Key == " ")
+        {
+            System.Diagnostics.Debug.WriteLine("Spacebar detected, calling ShowNextText");
+            ShowNextText();
+        }
+        else
+        {
+            System.Diagnostics.Debug.WriteLine($"Key '{e.Key}' did not match space");
+        }
+    }
+
+    private void ShowNextText()
+    {
+        Console.WriteLine("ShowNextText called");
+        currentIndex = (currentIndex + 1) % texts.Count;
+        currentText = texts[currentIndex];
+        Console.WriteLine($"Current text updated to: {currentText}");
+        StateHasChanged();
+    }
+
+
 }

@@ -1,0 +1,20 @@
+﻿@namespace AloneInSpace.Components.Animations
+@inherits LayoutComponentBase
+
+<div data-aos="@AnimationName" data-aos-delay="@Delay" data-aos-duration="@Duration">
+    @ChildContent
+</div>
+
+@code {
+    [Parameter]
+    public string AnimationName { get; set; } = "fade-up";
+
+    [Parameter]
+    public int Duration { get; set; } = 1000; // duration in milliseconds
+
+    [Parameter]
+    public int Delay { get; set; } = 0; // delay in milliseconds
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}
