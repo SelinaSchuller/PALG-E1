@@ -20,3 +20,12 @@ window.removeKeydownHandler = function () {
     // Clean up the event listener when not needed
     window.removeEventListener('keydown', function (event) { });
 };
+
+window.focusOnElementOnBodyClick = function (element) {
+    if (!window.isBodyClickListenerAdded) {
+        document.body.addEventListener('click', function () {
+            element.focus();
+        });
+        window.isBodyClickListenerAdded = true;
+    }
+};

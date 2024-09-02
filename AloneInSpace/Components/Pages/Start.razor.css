@@ -54,18 +54,13 @@ button {
     color: #fafbfa;
     font-size: 20px;
     font-family: "New Amsterdam", sans-serif;
+    transition: color 0.5s ease-in-out;
 }
 
-/*button {
-    margin-top: 200px;
-    width: 12%;
-    height: 10%;
-    border: solid transparent 5px;
-    border-radius: 10px;
-    background-color: #bf6a50;
-    color: #f3c598;
-    font-size: 30px;
-}*/
+button:hover {
+    color: #d10c0c;
+
+}
 
 .new-amsterdam-regular {
     font-family: "New Amsterdam", sans-serif;

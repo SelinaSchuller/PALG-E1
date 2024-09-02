@@ -1,24 +1,58 @@
-﻿body{
-	background-color: lightblue;
-	color: white;
-
+﻿body {
+    background-color: lightblue;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Handjet", sans-serif;
 }
+
+.centered-text {
+    width: 100%;
+    max-width: 1470px;
+    padding: 10px 200px;
+    text-align: center;
+    background-color: black;
+    font-size: 60px;
+    line-height: 1.2;
+    position: relative;
+    top: 170px;
+}
+
+p {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 24px;
+    font-family: "Handjet", sans-serif;
+    color: white;
+    width: 100%; 
+}
+
 
 div {
-	width: 300px;
-	height: 120px;
-	border: solid transparent 1px;
-	background-color: black;
-	font-size: 60px;
-	font-family: "Handjet";
-	padding: 10px;
+    width: 1470px;
+    height: 120px;
+    border: solid transparent 1px;
+    background-color: black;
+    font-size: 50px;
+    font-family: "Handjet";
+    padding: 10px;
+    text-decoration: none;
 }
 
+    div:focus {
+        outline: none;
+    }
 /*fonts:*/
 .handjet-<uniquifier > {
-	font-family: "Handjet", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: <weight>;
-	font-style: normal;
-	font-variation-settings: "ELGR" 1, "ELSH" 2;
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "ELGR" 1, "ELSH" 2;
 }

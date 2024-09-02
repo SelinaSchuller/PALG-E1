@@ -60,7 +60,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="Components\Pages\introduction.razor.css" />
+      <Content Include="Components\Pages\Introduction.razor.css" />
       <Content Include="Components\Pages\Start.razor.css" />
     </ItemGroup>
 
