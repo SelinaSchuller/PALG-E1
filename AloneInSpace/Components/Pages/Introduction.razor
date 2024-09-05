@@ -1,65 +1,101 @@
-﻿@page "/introduction"
+﻿@page "/introduction/{id:int}"
 
 <div @ref="focusDiv" tabindex="0" @onkeydown="HandleKeyPress" class="centered-text">
-    @if(!string.IsNullOrEmpty(currentText))
-    {
-        <TypingEffect Text="@currentText" Delay="70" />
-        <br />
-    }
-    <p>Press space to continue.</p>
+	@if(!string.IsNullOrEmpty(_currentText))
+	{
+		@if(IsTextItalic(_currentText))
+		{
+			<TypingEffectItalic Text="@_currentText.Trim('*')" Delay="70" />
+		}
+		else
+		{
+			<TypingEffect Text="@_currentText" Delay="70" />
+		}
+		<br />
+	}
+
+	<p>Press space to continue.</p>
 </div>
 
 @code {
-    private List<string> texts = new List<string>
-    {
-        "We all launched together, each to our own destination.",
-        "The others are out there somewhere, working on their tasks.",
-        "I wonder if they’re feeling as alone as I am right now.",
-        "*Your planet lies just below. It’s barren, uncharted, but it holds the key to understanding this part of the galaxy.*",
-        "Alright, I’m almost there. Better grab the tools before I head down."
-    };
-    private int currentIndex = 0;
-    private string currentText;
+	[Parameter]
+	public int Id { get; set; }
 
-    private ElementReference focusDiv;
+	private List<string> texts;
+	private int _currentIndex = 0;
+	private string _currentText;
 
-    [Inject] IJSRuntime JS { get; set; }
-    [Inject] NavigationManager Navigation { get; set; }
+	private ElementReference focusDiv;
 
-    protected override async Task OnInitializedAsync()
-    {
-        currentText = texts[currentIndex];
-    }
+	[Inject] IJSRuntime JS { get; set; }
+	[Inject] NavigationManager Navigation { get; set; }
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if(firstRender)
-        {
-            await focusDiv.FocusAsync();
-            await JS.InvokeVoidAsync("focusOnElementOnBodyClick", focusDiv);
-        }
-    }
+	protected override async Task OnInitializedAsync()
+	{
+		SetTextsBasedOnId(Id);
+		_currentText = texts[_currentIndex];
+	}
 
-    private void HandleKeyPress(KeyboardEventArgs e)
-    {
-        if(e.Key == " ")
-        {
-            ShowNextText();
-        }
-    }
+	protected override async Task OnAfterRenderAsync(bool firstRender)
+	{
+		if(firstRender)
+		{
+			await focusDiv.FocusAsync();
+			await JS.InvokeVoidAsync("focusOnElementOnBodyClick", focusDiv);
+		}
+	}
 
-    private void ShowNextText()
-    {
-        currentIndex++;
+	private void SetTextsBasedOnId(int id)
+	{
+		if(id == 1)
+		{
+			texts = new List<string>
+			{
+				"We all launched together, each to our own destination.",
+				"The others are out there somewhere, working on their tasks.",
+				"I wonder if they’re feeling as alone as I am right now.",
+				"*The planet lies just below. It’s barren, uncharted, but it holds the key to understanding this part of the galaxy.*",
+				"Alright, I’m almost there. Better grab the tools before I head down."
+			};
+		}
+		else if(Id == 2)
+		{
+			texts = new List<string>
+			{
+				"*The space rocket is heading towards the planet.*",
+				"*With high speed the planet gets closer*",
+				"Exploration takes on new meaning.",
+				"*The mysteries of the universe are vast and waiting.*",
+				"Time to explore a new path."
+			};
+		}
+	}
 
-        if(currentIndex < texts.Count)
-        {
-            currentText = texts[currentIndex];
-            StateHasChanged();
-        }
-        else
-        {
-            Navigation.NavigateTo("/bedroom");
-        }
-    }
+
+	private void HandleKeyPress(KeyboardEventArgs e)
+	{
+		if(e.Key == " ")
+		{
+			ShowNextText();
+		}
+	}
+
+	private void ShowNextText()
+	{
+		_currentIndex++;
+
+		if(_currentIndex < texts.Count)
+		{
+			_currentText = texts[_currentIndex];
+			StateHasChanged();
+		}
+		else
+		{
+			Navigation.NavigateTo("/bedroom");
+		}
+	}
+	private bool IsTextItalic(string text)
+	{
+		return text.StartsWith("*") && text.EndsWith("*");
+	}
 }

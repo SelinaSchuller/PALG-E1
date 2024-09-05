@@ -48,6 +48,18 @@ div {
     div:focus {
         outline: none;
     }
+
+.typingEffect{
+    display: flex;
+    justify-content: center;
+}
+
+.italic-text {
+    font-style: oblique;
+}
+
+
+
 /*fonts:*/
 .handjet-<uniquifier > {
     font-family: "Handjet", sans-serif;

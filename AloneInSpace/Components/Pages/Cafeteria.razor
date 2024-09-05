@@ -1,0 +1,20 @@
+﻿@page "/cafeteria"
+@using AloneInSpace.Services
+@inject INavigateToPage _navigateToPage
+
+<body>
+    <div class="main">
+        <div class="text">
+            <h1>Cafeteria</h1>
+        </div>
+        <button class="navButton left" @onclick='() => _navigateToPage.OnNavigatedTo("bedroom")' data-hover="Bedroom">&lt;</button>
+        <button class="navButton right" @onclick='() => _navigateToPage.OnNavigatedTo("storageRoom")' data-hover="Next">&gt;</button>
+    </div>
+</body>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        
+    }
+}

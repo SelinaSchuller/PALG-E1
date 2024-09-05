@@ -11,7 +11,6 @@ namespace AloneInSpace.Services
 	{
 		private readonly NavigationManager _navigationManager;
 
-		// Inject NavigationManager using constructor injection
 		public NavigateToPage(NavigationManager navigationManager)
 		{
 			_navigationManager = navigationManager;
@@ -21,5 +20,10 @@ namespace AloneInSpace.Services
 		{
 			_navigationManager.NavigateTo($"/{destination}");
 		}
-	}
+        public void OnNavigatedTo(string pageName, int id)
+        {
+            _navigationManager.NavigateTo($"{pageName}/{id}");
+        }
+
+    }
 }

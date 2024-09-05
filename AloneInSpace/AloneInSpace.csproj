@@ -55,13 +55,17 @@
     </ItemGroup>
 
     <ItemGroup>
+      <None Remove="Components\Pages\Cafeteria.razor.css" />
       <None Remove="Components\Pages\introduction.razor.css" />
       <None Remove="Components\Pages\Start.razor.css" />
+      <None Remove="Components\Pages\StorageRoom.razor.css" />
     </ItemGroup>
 
     <ItemGroup>
+      <Content Include="Components\Pages\Cafeteria.razor.css" />
       <Content Include="Components\Pages\Introduction.razor.css" />
       <Content Include="Components\Pages\Start.razor.css" />
+      <Content Include="Components\Pages\StorageRoom.razor.css" />
     </ItemGroup>
 
     <ItemGroup>

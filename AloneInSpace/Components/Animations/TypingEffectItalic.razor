@@ -1,0 +1,55 @@
+﻿<div style="font-style: italic;">
+    @typedText<span>@cursor</span>
+</div>
+
+@code {
+    [Parameter]
+    public string Text { get; set; }
+
+    [Parameter]
+    public int Delay { get; set; } = 100; // Default delay between characters in milliseconds
+
+    private string typedText = "";
+    private string cursor = "|"; // Optional: Cursor character
+    private Timer typingTimer;
+
+    protected override void OnParametersSet()
+    {
+        // Restart typing effect whenever the Text parameter changes
+        typedText = ""; // Reset the typed text
+        cursor = "|";   // Ensure the cursor is visible
+        StartTyping();
+    }
+
+    private void StartTyping()
+    {
+        // Dispose of any existing timer before starting a new one
+        typingTimer?.Dispose();
+
+        if(!string.IsNullOrEmpty(Text))
+        {
+            typingTimer = new Timer(async _ => await TypeNextCharacter(), null, 0, Delay);
+        }
+    }
+
+    private async Task TypeNextCharacter()
+    {
+        if(typedText.Length < Text.Length)
+        {
+            typedText += Text[typedText.Length];
+            await InvokeAsync(StateHasChanged);
+        }
+        else
+        {
+            typingTimer.Dispose();
+            cursor = ""; // Remove cursor after typing completes
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+
+    // Clean up the timer when the component is disposed
+    public void Dispose()
+    {
+        typingTimer?.Dispose();
+    }
+}

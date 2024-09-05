@@ -1,4 +1,3 @@
-
 Certainly! Here’s a simplified version of `CONVENTIONS.md` without using backticks:
 
 ---
@@ -47,6 +46,7 @@ Certainly! Here’s a simplified version of `CONVENTIONS.md` without using backt
 - **Directives:** Place at the top. Example: @page "/home"
 - **Markup:** Use proper indentation. Example:
 
+  ```
   @page "/home"
 
   <div>
@@ -57,16 +57,12 @@ Certainly! Here’s a simplified version of `CONVENTIONS.md` without using backt
   @code {
   // code
   }
+  ```
 
 ### Event Handling
 
 - **Methods:** Use PascalCase. Example: OnSubmit
 - **Async:** Use async Task. Example: async Task OnClickAsync() { }
-
-## Testing
-
-- **Unit Tests:** Use xUnit or NUnit. Mock dependencies if needed.
-- **Integration Tests:** Test components and services together.
 
 ## Code Formatting
 
