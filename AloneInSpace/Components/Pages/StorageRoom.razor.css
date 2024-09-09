@@ -49,19 +49,25 @@
 .image-container {
 	position: absolute;
 	left: 60%;
-	top: 60%;
+	top: 55%;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
 }
 
 img {
-	width: 20%;
+	width: 60%;
 	height: auto;
 	display: block;
 }
 
 .hover-alert {
 	position: absolute;
-	top: -170px; 
-	left: 10%;
+	top: -100px; 
+	left: 50%;
 	transform: translateX(-50%);
 	color: #f7cd22;
 	font-family: "Handjet", sans-serif;
@@ -69,6 +75,7 @@ img {
 	animation: shake 1s infinite;
 	text-shadow: 4px 4px 0 black, -4px 4px 0 black, 4px -4px 0 black, -4px -4px 0 black; 
 	transition: all 0.1s ease-in-out;
+	width: 300px;
 }
 
 .hover2 {
@@ -77,6 +84,49 @@ img {
 	top: -130px;
 	text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black; 
 }
+
+.confirmation-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: absolute;
+	right: 40px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 12px;
+	border-radius: 10px;
+	width: 300px;
+}
+
+.confirmation-buttons {
+	display: flex;
+	flex-direction: row; /* Ensure buttons are in a row */
+	gap: 10px; /* Space between buttons */
+	margin-top: 10px;
+	justify-content: center; /* Center the buttons */
+	width: 100%; /* Ensure buttons take full width */
+}
+
+.yes-button, .no-button {
+	flex-grow: 1; /* Allow buttons to expand and fill the row */
+	padding: 10px 20px;
+	font-size: 14px;
+	background-color: #f7cd22;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center; /* Make sure text stays centered */
+}
+
+	.yes-button:hover, .no-button:hover {
+		background-color: #ffda45;
+	}
+
+
 
 .image-container:hover .hover1 {
 	opacity: 0;
@@ -127,20 +177,21 @@ h1 {
 }
 
 
-button {
+.button-leave {
 	position: absolute;
 	background-color: transparent;
 	color: white;
-	font-size: 170px;
+	font-size: 200px;
 	font-family: "Handjet", sans-serif;
 	transition: color 0.2s ease-in-out;
 	border: none;
 	text-shadow: 4px 0 black, -4px 0 black, 0 4px black, 0 -4px black, 4px 4px black, -4px -4px black, 4px -4px black, -4px 4px black;
 	cursor: pointer;
 	display: inline-block;
+	animation: blink 1s infinite;
 }
 
-	button::before {
+	.button-leave::before {
 		content: attr(data-hover);
 		position: absolute;
 		top: -40px;
@@ -157,15 +208,30 @@ button {
 		transition: opacity 0.2s ease-in-out;
 	}
 
-	button:hover::before {
+	.button-leave:hover::before {
 		opacity: 1;
 	}
 
-	button:hover {
+	.button-leave:hover {
 		color: #f7cd22;
 	}
 
+/* Define the blink (brightness) animation */
+@keyframes blink {
+	0% {
+		filter: brightness(1); /* Normal brightness */
+		color: white; /* Normal color */
+	}
 
+	50% {
+		color: #f7cd22; /* Blink color */
+	}
+
+	100% {
+		filter: brightness(1); /* Back to normal brightness */
+		color: white; /* Back to original color */
+	}
+}
 
 /*fonts:*/
 .new-amsterdam-regular {

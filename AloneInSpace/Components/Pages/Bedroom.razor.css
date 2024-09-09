@@ -125,27 +125,28 @@ button {
     position: absolute;
     background-color: transparent;
     color: white;
-    font-size: 170px;
+    font-size: 200px;
     font-family: "Handjet", sans-serif;
     transition: color 0.2s ease-in-out;
     border: none;
     text-shadow: 4px 0 black, -4px 0 black, 0 4px black, 0 -4px black, 4px 4px black, -4px -4px black, 4px -4px black, -4px 4px black;
     cursor: pointer;
     display: inline-block;
+    animation: blink 1s infinite;
 }
 
     button::before {
         content: attr(data-hover);
         position: absolute;
-        top: -40px; /* Adjust this to position the text higher or lower */
+        top: -40px;
         left: 50%;
         transform: translateX(-50%);
         color: white;
         font-size: 40px;
         font-family: "Handjet", sans-serif;
-        text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black; /* Simplified text-shadow for a cleaner border */
-        background-color: transparent; /* No background color */
-        padding: 0; /* Remove padding to keep it close to the text */
+        text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+        background-color: transparent;
+        padding: 0;
         border-radius: 0;
         opacity: 0;
         transition: opacity 0.2s ease-in-out;
@@ -156,20 +157,37 @@ button {
     }
 
     button:hover {
-        color: #7dcbcd;
+        color: #6bb9bf;
     }
 
-/*fonts:*/
-.new-amsterdam-regular {
-    font-family: "New Amsterdam", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
-.handjet-<uniquifier > {
-    font-family: "Handjet", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings: "ELGR" 1, "ELSH" 2;
+/* Define the blink (brightness) animation */
+@keyframes blink {
+    0% {
+        filter: brightness(1); /* Normal brightness */
+        color: white; /* Normal color */
+    }
+
+    50% {
+        color: #6bb9bf; /* Blink color */
+    }
+
+    100% {
+        filter: brightness(1); /* Back to normal brightness */
+        color: white; /* Back to original color */
+    }
 }
+    /*fonts:*/
+    .new-amsterdam-regular {
+        font-family: "New Amsterdam", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .handjet-<uniquifier > {
+        font-family: "Handjet", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "ELGR" 1, "ELSH" 2;
+    }

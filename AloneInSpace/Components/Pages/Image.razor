@@ -3,21 +3,22 @@
 @inject INavigateToPage _navigateToPage
 
 <style>
-	body {
-		background: url(/Content/Images/spaceWithGreenPlanet.png) no-repeat center center;
-/*         background: url(/Content/Images/@GetBackgroundUrl()) no-repeat center center; 
- */		background-size: cover;
+	.fade-in {
+		background-size: cover;
 		background-color: black;
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
+		opacity: 0; /* Start with 0 opacity */
+		animation: fadeIn 3s ease-in-out forwards; /* 3-second fade-in */
 	}
 </style>
 
-<button class="navButton left" @onclick='() => _navigateToPage.OnNavigatedTo("storageRoom")' data-hover="back">&lt;</button>
-
+<body class="fade-in" style="background-image: url('/Content/Images/@GetBackgroundUrl()');">
+	<!-- Your other content -->
+</body>
 
 @code {
 	[Parameter]
@@ -31,21 +32,25 @@
 		if(Id == 1)
 		{
 			await Task.Delay(5000); // 5 seconds
+			Navigation.NavigateTo("/image/2");
+			StateHasChanged();
+		}
+		else if(Id == 2)
+		{
+			StateHasChanged();
+			await Task.Delay(5000); // 5 seconds
 			Navigation.NavigateTo("/LandedOnPlanet");
 		}
 	}
-
-
 
 	private string GetBackgroundUrl()
 	{
 		return Id switch
 		{
 			1 => "spaceWithGreenPlanet.png",
-			2 => "spaceWithBluePlanet.png",
+			2 => "spaceshipLandingOnGreenPlanet.png",
 			3 => "spaceWithRedPlanet.png",
 			_ => "spaceDefault.png"
 		};
 	}
-
 }

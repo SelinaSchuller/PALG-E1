@@ -3,24 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\interfaces\\idatabaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:interfaces\\idatabaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\introduction.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\introduction.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\services\\databaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:services\\databaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\image.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\image.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\cafeteria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\cafeteria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\services\\navigatetopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:services\\navigatetopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\cafeteria.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\cafeteria.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\storageroom.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\storageroom.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\bedroom.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\bedroom.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\bedroom.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\bedroom.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\storageroom.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\storageroom.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\start.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\start.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\services\\databaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:services\\databaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\storageroom.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\storageroom.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\image.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\image.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\interfaces\\idatabaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:interfaces\\idatabaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\start.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\start.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\start.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -35,24 +67,8 @@
       "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\introduction.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\introduction.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\bedroom.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\bedroom.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\image.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\image.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\cafeteria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:components\\pages\\cafeteria.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\cafeteria.razor.css||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -69,10 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\wwwroot\\css\\site.css||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:wwwroot\\css\\site.css||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\services\\checkkeybinds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:services\\checkkeybinds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,85 +94,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Start.razor",
-              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Start.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Start.razor",
-              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Start.razor",
-              "RelativeToolTip": "Components\\Pages\\Start.razor",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-09T07:52:32.018Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IDatabaseProvider.cs",
-              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Interfaces\\IDatabaseProvider.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IDatabaseProvider.cs",
-              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Interfaces\\IDatabaseProvider.cs",
-              "RelativeToolTip": "Interfaces\\IDatabaseProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAcwBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T16:11:32.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DatabaseProvider.cs",
-              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Services\\DatabaseProvider.cs",
-              "RelativeDocumentMoniker": "Services\\DatabaseProvider.cs",
-              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Services\\DatabaseProvider.cs",
-              "RelativeToolTip": "Services\\DatabaseProvider.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAkwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T16:07:09.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "StorageRoom.razor",
               "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\StorageRoom.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\StorageRoom.razor",
               "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\StorageRoom.razor",
               "RelativeToolTip": "Components\\Pages\\StorageRoom.razor",
-              "ViewState": "AgIAADUAAAAAAAAAAADwv0AAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAADwvyoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T09:09:48.363Z"
+              "WhenOpened": "2024-09-05T09:09:48.363Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Routes.razor",
-              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Routes.razor",
-              "RelativeDocumentMoniker": "Components\\Routes.razor",
-              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Routes.razor",
-              "RelativeToolTip": "Components\\Routes.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-09T07:45:06.73Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "StorageRoom.razor.css",
               "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\StorageRoom.razor.css",
               "RelativeDocumentMoniker": "Components\\Pages\\StorageRoom.razor.css",
               "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\StorageRoom.razor.css",
               "RelativeToolTip": "Components\\Pages\\StorageRoom.razor.css",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADgAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAANIAAAAAAAAAAAAAANoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-05T07:45:02.813Z"
+              "WhenOpened": "2024-09-05T07:45:02.813Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "Bedroom.razor.css",
+              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Bedroom.razor.css",
+              "RelativeDocumentMoniker": "Components\\Pages\\Bedroom.razor.css",
+              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Bedroom.razor.css",
+              "RelativeToolTip": "Components\\Pages\\Bedroom.razor.css",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAAAKMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-02T09:29:21.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavigateToPage.cs",
+              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Services\\NavigateToPage.cs",
+              "RelativeDocumentMoniker": "Services\\NavigateToPage.cs",
+              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Services\\NavigateToPage.cs",
+              "RelativeToolTip": "Services\\NavigateToPage.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T09:56:39.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Image.razor",
+              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Image.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Image.razor",
+              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Image.razor",
+              "RelativeToolTip": "Components\\Pages\\Image.razor",
+              "ViewState": "AgIAABgAAAAAAAAAAADwvx8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T15:11:32.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cafeteria.razor.css",
+              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Cafeteria.razor.css",
+              "RelativeDocumentMoniker": "Components\\Pages\\Cafeteria.razor.css",
+              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Cafeteria.razor.css",
+              "RelativeToolTip": "Components\\Pages\\Cafeteria.razor.css",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-09T10:07:46.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Introduction.razor",
+              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Introduction.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Introduction.razor",
+              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Introduction.razor",
+              "RelativeToolTip": "Components\\Pages\\Introduction.razor",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAFIAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T09:39:28.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cafeteria.razor",
+              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Cafeteria.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Cafeteria.razor",
+              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Cafeteria.razor",
+              "RelativeToolTip": "Components\\Pages\\Cafeteria.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T15:27:49.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Bedroom.razor",
+              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Bedroom.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Bedroom.razor",
+              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Bedroom.razor",
+              "RelativeToolTip": "Components\\Pages\\Bedroom.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T10:05:04.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Start.razor.css",
               "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Start.razor.css",
               "RelativeDocumentMoniker": "Components\\Pages\\Start.razor.css",
@@ -172,7 +227,70 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
+              "Title": "Image.razor.css",
+              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Image.razor.css",
+              "RelativeDocumentMoniker": "Components\\Pages\\Image.razor.css",
+              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Image.razor.css",
+              "RelativeToolTip": "Components\\Pages\\Image.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-09T09:48:09.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DatabaseProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Services\\DatabaseProvider.cs",
+              "RelativeDocumentMoniker": "Services\\DatabaseProvider.cs",
+              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Services\\DatabaseProvider.cs",
+              "RelativeToolTip": "Services\\DatabaseProvider.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAswDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T16:07:09.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "Components\\Routes.razor",
+              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Routes.razor",
+              "RelativeToolTip": "Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T07:45:06.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IDatabaseProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Interfaces\\IDatabaseProvider.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IDatabaseProvider.cs",
+              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Interfaces\\IDatabaseProvider.cs",
+              "RelativeToolTip": "Interfaces\\IDatabaseProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwBkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T16:11:32.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Start.razor",
+              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Start.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Start.razor",
+              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Start.razor",
+              "RelativeToolTip": "Components\\Pages\\Start.razor",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T07:52:32.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "Components\\_Imports.razor",
@@ -184,19 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Introduction.razor",
-              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Introduction.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Introduction.razor",
-              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Introduction.razor",
-              "RelativeToolTip": "Components\\Pages\\Introduction.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-02T09:39:28.883Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
@@ -208,43 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Image.razor",
-              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Image.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Image.razor",
-              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Image.razor",
-              "RelativeToolTip": "Components\\Pages\\Image.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T15:11:32.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Bedroom.razor.css",
-              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Bedroom.razor.css",
-              "RelativeDocumentMoniker": "Components\\Pages\\Bedroom.razor.css",
-              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Bedroom.razor.css",
-              "RelativeToolTip": "Components\\Pages\\Bedroom.razor.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-02T09:29:21.647Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Cafeteria.razor",
-              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Cafeteria.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\Cafeteria.razor",
-              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Cafeteria.razor",
-              "RelativeToolTip": "Components\\Pages\\Cafeteria.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T15:27:49.108Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Cafeteria.razor.css",
               "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Pages\\Cafeteria.razor.css",
               "RelativeDocumentMoniker": "Components\\Pages\\Cafeteria.razor.css",
@@ -252,11 +322,12 @@
               "RelativeToolTip": "Components\\Pages\\Cafeteria.razor.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-03T11:46:02.277Z"
+              "WhenOpened": "2024-09-03T11:46:02.277Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Animation.razor",
               "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Components\\Animations\\Animation.razor",
               "RelativeDocumentMoniker": "Components\\Animations\\Animation.razor",
@@ -268,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "animation.js",
               "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\wwwroot\\js\\animation.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\animation.js",
@@ -280,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -289,18 +360,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-08-29T09:37:47.213Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CheckKeybinds.cs",
-              "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Services\\CheckKeybinds.cs",
-              "RelativeDocumentMoniker": "Services\\CheckKeybinds.cs",
-              "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Services\\CheckKeybinds.cs",
-              "RelativeToolTip": "Services\\CheckKeybinds.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T13:53:47.965Z"
             }
           ]
         }

@@ -52,13 +52,14 @@ button {
     position: absolute;
     background-color: transparent;
     color: white;
-    font-size: 170px;
+    font-size: 200px;
     font-family: "Handjet", sans-serif;
     transition: color 0.2s ease-in-out;
     border: none;
     text-shadow: 4px 0 black, -4px 0 black, 0 4px black, 0 -4px black, 4px 4px black, -4px -4px black, 4px -4px black, -4px 4px black;
     cursor: pointer;
     display: inline-block;
+    animation: blink 1s infinite;
 }
 
     button::before {
@@ -86,7 +87,22 @@ button {
         color: #6acbe0;
     }
 
+/* Define the blink (brightness) animation */
+@keyframes blink {
+	0% {
+		filter: brightness(1); /* Normal brightness */
+		color: white; /* Normal color */
+	}
 
+	50% {
+		color: #6acbe0; /* Blink color */
+	}
+
+	100% {
+		filter: brightness(1); /* Back to normal brightness */
+		color: white; /* Back to original color */
+	}
+}
 
 /*fonts:*/
 .new-amsterdam-regular {
