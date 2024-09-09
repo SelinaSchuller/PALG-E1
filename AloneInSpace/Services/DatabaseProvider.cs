@@ -11,24 +11,18 @@ namespace AloneInSpace.Services
 	public class DatabaseProvider : IDatabaseProvider
 	{
 
-		private const string BULLETS = "0";
-		private const string GUN = "false";
-		
-		private const string BACKPACK = "false";
-		private const string SHOVEL = "false";
-		private const string SAVE = "noSave";
+        private const string BACKPACK = "backpackPickedUp";
+        private const string SHOVEL = "shovelPickedUp";
+        private const string SAVE = "noSave";
 
-        private bool _hasGun;
         private bool _backpack;
         private bool _shovel;
         private string _save;
 
-        public bool HasGun => _hasGun;
         public bool Backpack => _backpack;
         public bool Shovel => _shovel;
         public string Save => _save;
 
-        public event EventHandler HasGunChanged;
         public event EventHandler BackpackChanged;
         public event EventHandler ShovelChanged;
         public event EventHandler SaveChanged;
@@ -56,69 +50,35 @@ namespace AloneInSpace.Services
 			return JsonSerializer.Serialize(item);
 		}
 
-		//public void DeleteBullets()
-		//{
-		//	SecureStorage.Remove(BULLETS);
-		//}
-
-		//public async Task<int> GetBulletsAsync()
-		//{
-		//	string strBullets = await SecureStorage.GetAsync(BULLETS);
-		//	int.TryParse(strBullets, out int intBullet);
-		//	return intBullet;
-		//}
-
-		//public async Task SaveBulletsAsync(int intBullets)
-		//{
-		//	string strBullets = intBullets.ToString();
-
-		//	await SecureStorage.SetAsync(BULLETS, strBullets);
-		//}
-
-
-
-		public void DeleteShovel()
-		{
-			SecureStorage.Remove(SHOVEL);
-		}
-
-		public async Task<bool> GetShovelAsync()
-		{
-			string strShovel = await SecureStorage.GetAsync(SHOVEL);
-			bool.TryParse(strShovel, out bool boolShovel);
-			return boolShovel;
-		}
-
-		public async Task SaveShovelAsync(bool boolShovel)
-		{
-			string strShovel = boolShovel.ToString();
-
-			await SecureStorage.SetAsync(SHOVEL, strShovel);
+        public async Task<bool> GetShovelAsync()
+        {
+            string strShovel = await SecureStorage.GetAsync(SHOVEL);
+            bool.TryParse(strShovel, out bool boolShovel);
             _shovel = boolShovel;
-            ShovelChanged?.Invoke(this, EventArgs.Empty);
-
+            return boolShovel;
         }
 
-		public void DeleteBackpack()
-		{
-			SecureStorage.Remove(BACKPACK);
-		}
+        public async Task SaveShovelAsync(bool boolShovel)
+        {
+            await SecureStorage.SetAsync(SHOVEL, boolShovel.ToString());
+            _shovel = boolShovel;
+            ShovelChanged?.Invoke(this, EventArgs.Empty);
+        }
 
-		public async Task<bool> GetBackpackAsync()
-		{
-			string strBackpack = await SecureStorage.GetAsync(BACKPACK);
-			bool.TryParse(strBackpack, out bool boolBackpack);
-			return boolBackpack;
-		}
+        public async Task<bool> GetBackpackAsync()
+        {
+            string strBackpack = await SecureStorage.GetAsync(BACKPACK);
+            bool.TryParse(strBackpack, out bool boolBackpack);
+            _backpack = boolBackpack;
+            return boolBackpack;
+        }
 
-		public async Task SaveBackpackAsync(bool boolBackpack)
-		{
-			string strBackpack = boolBackpack.ToString();
-
-			await SecureStorage.SetAsync(BACKPACK, strBackpack);
-			_backpack = boolBackpack;
-			BackpackChanged?.Invoke(this, EventArgs.Empty);
-		}
+        public async Task SaveBackpackAsync(bool boolBackpack)
+        {
+            await SecureStorage.SetAsync(BACKPACK, boolBackpack.ToString());
+            _backpack = boolBackpack;
+            BackpackChanged?.Invoke(this, EventArgs.Empty);
+        }
 
         public void DeleteSave()
         {

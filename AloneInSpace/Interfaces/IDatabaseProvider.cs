@@ -8,14 +8,12 @@
 
         Task<bool> GetShovelAsync();
         Task SaveShovelAsync(bool shovel);
-        void DeleteShovel();
 
 		bool Shovel { get; }
 		event EventHandler ShovelChanged;
 
 		Task<bool> GetBackpackAsync();
 		Task SaveBackpackAsync(bool backpack);
-		void DeleteBackpack();
 
 		bool Backpack { get; }
         event EventHandler BackpackChanged;

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\services\\databaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:services\\databaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\interfaces\\idatabaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:interfaces\\idatabaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\services\\databaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|solutionrelative:services\\databaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5FC4C1F-00D1-4A7D-B827-107157F5E126}|AloneInSpace.csproj|c:\\users\\selina schuller\\onedrive - curio\\documenten\\palg e\\e1\\palg-e1\\aloneinspace\\components\\pages\\storageroom.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -94,31 +94,30 @@
               "RelativeToolTip": "Components\\Pages\\Start.razor",
               "ViewState": "AgIAACYAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-09T07:52:32.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T07:52:32.018Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "IDatabaseProvider.cs",
               "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Interfaces\\IDatabaseProvider.cs",
               "RelativeDocumentMoniker": "Interfaces\\IDatabaseProvider.cs",
               "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Interfaces\\IDatabaseProvider.cs",
               "RelativeToolTip": "Interfaces\\IDatabaseProvider.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwCAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-05T16:11:32.842Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DatabaseProvider.cs",
               "DocumentMoniker": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Services\\DatabaseProvider.cs",
               "RelativeDocumentMoniker": "Services\\DatabaseProvider.cs",
               "ToolTip": "C:\\Users\\Selina Schuller\\OneDrive - Curio\\Documenten\\PALG E\\E1\\PALG-E1\\AloneInSpace\\Services\\DatabaseProvider.cs",
               "RelativeToolTip": "Services\\DatabaseProvider.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAowIUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-05T16:07:09.053Z",
               "EditorCaption": ""
@@ -133,8 +132,7 @@
               "RelativeToolTip": "Components\\Pages\\StorageRoom.razor",
               "ViewState": "AgIAADUAAAAAAAAAAADwv0AAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T09:09:48.363Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T09:09:48.363Z"
             },
             {
               "$type": "Document",
@@ -146,8 +144,7 @@
               "RelativeToolTip": "Components\\Routes.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-09T07:45:06.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T07:45:06.73Z"
             },
             {
               "$type": "Document",
@@ -159,8 +156,7 @@
               "RelativeToolTip": "Components\\Pages\\StorageRoom.razor.css",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADgAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-05T07:45:02.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T07:45:02.813Z"
             },
             {
               "$type": "Document",
@@ -172,8 +168,7 @@
               "RelativeToolTip": "Components\\Pages\\Start.razor.css",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAADIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-09T08:13:44.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T08:13:44.287Z"
             },
             {
               "$type": "Document",
@@ -185,8 +180,7 @@
               "RelativeToolTip": "Components\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T14:10:35.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T14:10:35.457Z"
             },
             {
               "$type": "Document",
