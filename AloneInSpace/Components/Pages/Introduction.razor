@@ -1,4 +1,8 @@
 ﻿@page "/introduction/{id:int}"
+@using AloneInSpace.Services
+@using AloneInSpace.Interfaces
+@inject INavigateToPage _navigateToPage
+@inject IDatabaseProvider _databaseProvider
 
 <div @ref="focusDiv" tabindex="0" @onkeydown="HandleKeyPress" class="centered-text">
 	@if(!string.IsNullOrEmpty(_currentText))
@@ -12,9 +16,13 @@
 			<TypingEffect Text="@_currentText" Delay="70" />
 		}
 		<br />
+		<p>Press space to continue.</p>
 	}
-
-	<p>Press space to continue.</p>
+	@if(ShowWarning)
+	{
+		<p>AFTER THIS POINT, THE CHOICES YOU MAKE WILL HAVE EFFECT ON YOUR STORY.</p>
+		<p>BE AWARE.</p>
+	}
 </div>
 
 @code {
@@ -22,8 +30,11 @@
 	public int Id { get; set; }
 
 	private List<string> texts;
-	private int _currentIndex = 0;
-	private string _currentText;
+	private int _currentIndex { get; set; } = 0;
+	private string _currentText { get; set; }
+
+	private bool ShowWarning {get; set;} = false;
+
 
 	private ElementReference focusDiv;
 
@@ -63,11 +74,14 @@
 			texts = new List<string>
 			{
 				"*The space rocket is heading towards the planet.*",
-				"*With high speed the planet gets closer*",
-				"Exploration takes on new meaning.",
-				"*The mysteries of the universe are vast and waiting.*",
-				"Time to explore a new path."
+				"*With high speed, the planet gets closer.*",
+				"Well, it's now or never.",
+				"I hope the landing goes as planned...",
+				"*The surface looks barren, yet strangely intriguing.*",
+				"Time to grab that sample and get out of here.",
+				"*The rocket begins to descend toward the planet's surface.*"
 			};
+
 		}
 	}
 
@@ -91,7 +105,16 @@
 		}
 		else
 		{
-			Navigation.NavigateTo("/bedroom");
+			if(Id == 1)
+			{
+				Navigation.NavigateTo("/bedroom");
+			}
+			else if(Id == 2)
+			{
+				_currentText = string.Empty;
+				ShowWarning = true;
+				Navigation.NavigateTo("/image/1");
+			}
 		}
 	}
 	private bool IsTextItalic(string text)

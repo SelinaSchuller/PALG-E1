@@ -1,6 +1,8 @@
 ﻿@page "/"
 @using AloneInSpace.Services
+@using AloneInSpace.Interfaces
 @inject INavigateToPage _navigateToPage
+@inject IDatabaseProvider _databaseProvider
 
 <body>
 	<div class="main">
@@ -8,16 +10,54 @@
 			<h1>ALONE IN SPACE</h1>
 			<p>Made by Selina Schuller</p>
 		</div>
-		<button class="startButton" @onclick='() => _navigateToPage.OnNavigatedTo("introduction/1")'>Play</button>
 
+		@if(string.IsNullOrEmpty("noSave"))
+		{
+			<button class="startButton" @onclick='() => _navigateToPage.OnNavigatedTo("introduction/1")'>New Game</button>
+		}
+		else
+		{
+			<div class="buttons">
+				<button class="startButton" @onclick='() => _navigateToPage.OnNavigatedTo(_save)'>Play</button>
+				<button class="startButton" @onclick='() => NewGame()'>New Game</button>
+			</div>
+		}
 	</div>
 </body>
 
 @code {
+
+	private string _save { get; set; }
+
+	// protected override async Task OnInitializedAsync()
+	// {
+	// 	_save = await _databaseProvider.GetSaveAsync();
+	// 	System.Diagnostics.Debug.WriteLine($"Save: {_save}");
+	// }
+
 	protected override async Task OnInitializedAsync()
 	{
-		int i = 0;
-		i++;
-
+		try
+		{
+			_save = await _databaseProvider.GetSaveAsync() ?? "noSave"; // Return "noSave" if null
+			System.Diagnostics.Debug.WriteLine($"Save: {_save}");
+		}
+		catch(Exception ex)
+		{
+			System.Diagnostics.Debug.WriteLine($"Error: {ex.Message}");
+		}
 	}
+
+	private async void NewGame()
+	{
+		await _databaseProvider.SaveSaveAsync("noSave");
+		await _databaseProvider.SaveBackpackAsync(false);
+		await _databaseProvider.SaveShovelAsync(false);
+
+
+		_navigateToPage.OnNavigatedTo("introduction/1");
+	}
+
+
+
 }

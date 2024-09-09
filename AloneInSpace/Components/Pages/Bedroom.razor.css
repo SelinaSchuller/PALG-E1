@@ -22,6 +22,86 @@
     left: 0;
 }
 
+.notification {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Handjet", sans-serif;
+    font-size: 30px;
+    z-index: 1000;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.image-container {
+    position: absolute;
+    left: 60%;
+    top: 60%;
+}
+
+img {
+    width: 20%;
+    height: auto;
+    display: block;
+}
+
+.hover-alert {
+    position: absolute;
+    top: -170px;
+    left: 10%;
+    transform: translateX(-50%);
+    color: #a8dde2;
+    font-family: "Handjet", sans-serif;
+    font-size: 100px;
+    animation: shake 1s infinite;
+    text-shadow: 4px 4px 0 black, -4px 4px 0 black, 4px -4px 0 black, -4px -4px 0 black;
+    transition: all 0.1s ease-in-out;
+}
+
+.hover2 {
+    opacity: 0;
+    font-size: 60px;
+    top: -130px;
+    text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+}
+
+.image-container:hover .hover1 {
+    opacity: 0;
+}
+
+.image-container:hover .hover2 {
+    opacity: 1;
+}
+
+/* Shaking animation */
+@keyframes shake {
+    0% {
+        transform: translateX(-50%) translateY(-2px);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(2px);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-2px);
+    }
+}
+
+
 .text {
     margin: 20px;
     color: white;

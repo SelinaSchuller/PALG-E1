@@ -1,20 +1,85 @@
 ﻿@page "/storageRoom"
-@using AloneInSpace.Services
 @inject INavigateToPage _navigateToPage
+@inject IDatabaseProvider _databaseProvider
 
 <body>
     <div class="main">
         <div class="text">
             <h1>StorageRoom</h1>
         </div>
+
+        @if (!_shovelPickedUp)
+        {
+            @if (!_shovel)
+            {
+                <div class="image-container" @onclick="PickUpShovel">
+                    <img src="/Content/Images/DiamondShovel.png" alt="Shovel Image" class="hover-image" />
+                    <div class="hover-alert hover1">!</div>
+                    <div class="hover-alert hover2">Pick up</div>
+                </div>
+            }
+            else
+            {
+                <div class="notification">
+                    Shovel has been picked up!
+                </div>
+            }
+        }
+
         <button class="navButton left" @onclick='() => _navigateToPage.OnNavigatedTo("cafeteria")' data-hover="Cafeteria">&lt;</button>
-        <button class="navButton right" @onclick='() => _navigateToPage.OnNavigatedTo("introduction/2")' data-hover="Next">&gt;</button>
+
+        @if (_continue)
+        {
+            <div class="hover-alert">Are you sure you are finished getting supplies?</div>
+            <button onclick="Continue(true)">Yes</button>
+            <button onclick="Continue(false)">No</button>
+        }
+        else{
+        <button class="navButton right" onclick='Continue(false)' data-hover="Go on mission">&gt;</button>
+
+        }
+
     </div>
 </body>
 
 @code {
+
+    private bool _shovel { get; set; } = false;
+    private bool _continue { get; set; } = false;
+    private bool _goOnMission { get; set; } = false;
+    private bool _shovelPickedUp { get; set; }
+
+
     protected override async Task OnInitializedAsync()
     {
+        _shovelPickedUp = await _databaseProvider.GetShovelAsync();
+        _shovel = _shovelPickedUp;
 
+    }
+
+    private void PickUpShovel()
+    {
+        _shovel = true;
+        _databaseProvider.SaveShovelAsync(true);
+
+        StateHasChanged();
+    }
+
+    private async void Continue(bool goOnMission)
+    {
+        bool shovelBool = await _databaseProvider.GetShovelAsync();
+        System.Diagnostics.Debug.WriteLine($"ShovelBool = {shovelBool}");
+        bool backpackBool = await _databaseProvider.GetBackpackAsync();
+        System.Diagnostics.Debug.WriteLine($"BackpackBool = {backpackBool}");
+
+        if((shovelBool && backpackBool) || (goOnMission))
+        {
+            _navigateToPage.OnNavigatedTo("introduction/2");
+        }
+        else
+        {
+            _continue = true;
+            StateHasChanged();
+        }
     }
 }

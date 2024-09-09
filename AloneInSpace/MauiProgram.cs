@@ -23,7 +23,7 @@ namespace AloneInSpace
     		builder.Services.AddBlazorWebViewDeveloperTools();
     		builder.Logging.AddDebug();
 #endif
-            //place here needed services:
+            //Place here needed services:
             builder.Services.AddScoped<INavigateToPage, NavigateToPage>();
             builder.Services.AddScoped<IDatabaseProvider, DatabaseProvider>();
 

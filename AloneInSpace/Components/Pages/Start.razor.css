@@ -45,11 +45,17 @@ p {
     padding-bottom: 10px;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    justify-content: flex-start;
+    align-items: center; /* To center the buttons horizontally if needed */
+}
 
 button {
-    margin-bottom: 310px;
-    border: solid transparent 5px;
-    border-radius: 10px;
+    margin-bottom: 0;
+    border: none;
     background-color: transparent;
     color: #fafbfa;
     font-size: 20px;

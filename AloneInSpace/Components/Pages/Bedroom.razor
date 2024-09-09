@@ -1,19 +1,54 @@
 ﻿@page "/bedroom"
-@using AloneInSpace.Services
 @inject INavigateToPage _navigateToPage
+@inject IDatabaseProvider _databaseProvider
 
 <body>
     <div class="main">
         <div class="text">
             <h1>Bedroom</h1>
         </div>
+
+        @if (!_backpackPickedUp)
+        {
+            @if (!_backpack)
+            {
+                <div class="image-container" @onclick="PickUpBackpack">
+                    <img src="/Content/Images/Backpack.png" alt="Backpack Image" class="hover-image" />
+                    <div class="hover-alert hover1">!</div>
+                    <div class="hover-alert hover2">Pick up</div>
+                </div>
+            }
+            else
+            {
+                <div class="notification">
+                    Backpack has been picked up!
+                </div>
+            }
+        }
         <button class="navButton right" @onclick='() => _navigateToPage.OnNavigatedTo("cafeteria")' data-hover="Cafeteria">&gt;</button>
     </div>
 </body>
 
 @code {
-    protected override async Task OnInitializedAsync()
-    {
-        // Initialization logic here
+
+    @code {
+
+        private bool _backpack { get; set; } = false;
+        private bool _backpackPickedUp { get; set; }
+
+        protected override async Task OnInitializedAsync()
+        {
+            _backpackPickedUp = await _databaseProvider.GetBackpackAsync();
+
+            _backpack = _backpackPickedUp;
+        }
+
+        private void PickUpBackpack()
+        {
+            _backpack = true;
+            _databaseProvider.SaveBackpackAsync(true);
+            StateHasChanged();
+        }
     }
+
 }
