@@ -69,8 +69,70 @@ button:hover {
 
 }
 
-.new-amsterdam-regular {
-    font-family: "New Amsterdam", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+/*Validation:*/
+.ValButton {
+    position: absolute;
+    background-color: black;
+    border: transparent solid 1px;
+    border-radius: 3px;
+    top: 30%;
+    left: 84%;
 }
+
+    .ValButton:hover {
+        color: #808080ff;
+        background-color: #191919ee;
+    }
+
+.ValForm {
+    top: 35%;
+    left: 75%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.ValMain {
+    font-family: "New Amsterdam", sans-serif;
+ 
+    background-color: black;
+    opacity: 0.7;
+    border: transparent solid 1px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+    .ValMain input {
+        background-color: black;
+        color: white;
+        padding: 5px;
+        margin: 0px 10px;
+    }
+    .ValMain button:hover {
+        color: #808080ff;
+        background-color: #191919ee;
+    }
+.ValMessage {
+    color: red;
+    top: 33%;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    padding: 2px 10px;
+    margin: 2px;
+    border: transparent solid 1px;
+    border-radius: 5px;
+}
+
+    /*fonts:*/
+    .new-amsterdam-regular {
+        font-family: "New Amsterdam", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
