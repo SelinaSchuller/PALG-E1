@@ -11,6 +11,19 @@
 			<p>Made by Selina Schuller</p>
 		</div>
 
+		<button class="ValButton" @onclick="SetValidationInput">Validation input</button>
+
+		<div class="ValForm" style="opacity: @(_valInput ? 1 : 0); transition: opacity 0.5s;">
+			<div class="ValMain">
+				<label for="userInput">Enter your name:</label>
+				<input id="userInput" @bind="userInput" />
+				<button @onclick="ValidateInput">Submit</button>
+			</div>
+			<p class="ValMessage">@validationMessage</p>
+		</div>
+
+
+
 		@if(string.IsNullOrEmpty("noSave"))
 		{
 			<button class="startButton" @onclick='() => _navigateToPage.OnNavigatedTo("introduction/1")'>New Game</button>
@@ -28,6 +41,10 @@
 @code {
 
 	private string _save { get; set; }
+	private bool _valInput { get; set; } = false;
+
+	private string userInput { get; set; }
+	private string validationMessage { get; set; }
 
 	// protected override async Task OnInitializedAsync()
 	// {
@@ -56,6 +73,29 @@
 
 
 		_navigateToPage.OnNavigatedTo("introduction/1");
+	}
+
+	private void SetValidationInput()
+	{
+		_valInput = true;
+		StateHasChanged();
+	}
+
+	private void ValidateInput()
+	{
+		if(string.IsNullOrEmpty(userInput))
+		{
+			validationMessage = "Name cannot be empty.";
+		}
+		else if(userInput.Any(char.IsDigit))
+		{
+			validationMessage = "Invalid name, your name can't contain numbers.";
+		}
+		else
+		{
+			validationMessage = "Name accepted!";
+		}
+		StateHasChanged();
 	}
 
 
