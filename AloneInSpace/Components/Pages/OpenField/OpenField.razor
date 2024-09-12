@@ -1,0 +1,88 @@
+﻿@page "/openField"
+@using AloneInSpace.Services
+@using AloneInSpace.Interfaces
+@inject INavigateToPage _navigateToPage
+@inject IDatabaseProvider _databaseProvider
+
+<body>
+	<div class="main">
+		<div class="text">
+			<h1>???</h1>
+		</div>
+		<div class="dialog">
+			@if(IsTextItalic(_currentText))
+			{
+				<TypingEffectItalic Text="@_currentText.Trim('*')" Delay="70" />
+			}
+			else
+			{
+				<TypingEffect Text="@_currentText" Delay="70" />
+			}
+		</div>
+
+		<div class="Choices">
+			@if(_showChoices)
+			{
+				<button>Mountains</button>
+				<button>Open field</button>
+			}
+		</div>
+	</div>
+</body>
+
+@code {
+	private List<string> texts;
+	private int _currentIndex { get; set; } = 0;
+	private string _currentText { get; set; }
+
+	private bool _showChoices { get; set; } = false;
+
+	[Inject] IJSRuntime JS { get; set; }
+
+
+	protected override async Task OnInitializedAsync()
+	{
+		texts = new List<string>
+		{
+			"That landing was easier than expected.",
+			"So, supposedly I need to get a sample from a certain stone found underground...",
+			"Hm, should I go to the mountains and search for it in a cave?",
+			"Or should I look for it here in the open?",
+			"Get sampel at mountains or in open field."
+		};
+
+		_currentText = texts[_currentIndex];
+
+		await ShowNextTextWithDelay();
+	}
+
+	private async Task ShowNextTextWithDelay()
+	{
+		await Task.Delay(10000);
+
+		_currentIndex++;
+
+		if(_currentIndex >= texts.Count)
+		{
+			_showChoices = true;
+			StateHasChanged();
+		}
+		else if(_currentIndex < texts.Count)
+		{
+			_currentText = texts[_currentIndex];
+			StateHasChanged();
+
+			await ShowNextTextWithDelay();
+		}
+		else
+		{
+			_showChoices = true;
+			StateHasChanged();
+		}
+	}
+
+	private bool IsTextItalic(string text)
+	{
+		return text.StartsWith("*") && text.EndsWith("*");
+	}
+}
