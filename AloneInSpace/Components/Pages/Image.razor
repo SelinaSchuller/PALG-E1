@@ -12,12 +12,11 @@
 		width: 100%;
 		height: 100%;
 		opacity: 0; /* Start with 0 opacity */
-		animation: fadeIn 3s ease-in-out forwards; /* 3-second fade-in */
+		animation: fadeIn 3s ease-in-out forwards;
 	}
 </style>
 
 <body class="fade-in" style="background-image: url('/Content/Images/@GetBackgroundUrl()');">
-	<!-- Your other content -->
 </body>
 
 @code {
@@ -27,21 +26,24 @@
 	[Inject] IJSRuntime JS { get; set; }
 	[Inject] NavigationManager Navigation { get; set; }
 
-	protected override async Task OnInitializedAsync()
+	protected override async Task OnParametersSetAsync()
 	{
+		StateHasChanged();
+
 		if(Id == 1)
 		{
 			await Task.Delay(5000); // 5 seconds
-			Navigation.NavigateTo("/image/2");
+			_navigateToPage.OnNavigatedTo("image/2");
 			StateHasChanged();
 		}
 		else if(Id == 2)
 		{
-			StateHasChanged();
 			await Task.Delay(5000); // 5 seconds
-			Navigation.NavigateTo("/LandedOnPlanet");
+			_navigateToPage.OnNavigatedTo("landedOnPlanet");
+			StateHasChanged();
 		}
 	}
+
 
 	private string GetBackgroundUrl()
 	{
